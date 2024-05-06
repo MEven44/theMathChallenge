@@ -1,0 +1,15 @@
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.AssemblyInfoInputs.cache
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.AssemblyInfo.cs
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.csproj.CoreCompileInputs.cache
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.sourcelink.json
+/Users/moraneven/myProjects/TheMathChallenge/bin/Debug/net8.0/TheMathChallenge
+/Users/moraneven/myProjects/TheMathChallenge/bin/Debug/net8.0/TheMathChallenge.deps.json
+/Users/moraneven/myProjects/TheMathChallenge/bin/Debug/net8.0/TheMathChallenge.runtimeconfig.json
+/Users/moraneven/myProjects/TheMathChallenge/bin/Debug/net8.0/TheMathChallenge.dll
+/Users/moraneven/myProjects/TheMathChallenge/bin/Debug/net8.0/TheMathChallenge.pdb
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.dll
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/refint/TheMathChallenge.dll
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.pdb
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/TheMathChallenge.genruntimeconfig.cache
+/Users/moraneven/myProjects/TheMathChallenge/obj/Debug/net8.0/ref/TheMathChallenge.dll
