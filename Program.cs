@@ -72,17 +72,30 @@ namespace TheMathChallenge
                 {
                     equation = equation.Replace((i + 1).ToString(), playerNumbers[i].ToString());
                 }
-                DataTable dt = new DataTable();
-                var result = dt.Compute(equation, "");
+                string[] sides = equation.Split('=');
+                if (sides.Length !=2)
+                {
+                    return false
+                }
+                //evaluate both sides
+               double leftResult = EvaluateExpression(sides[0]);
+               double rightResult = EvaluateExpression(sides[1]);
 
-                return Convert.ToBoolean(result);
+               //compare results
+               
+               return leftResult-rightResult == 0;
             }
             catch (Exception)
             {
                 return false;
             }
         }
-
+        static double EvaluateExpression(string expression)
+        {
+            var dataTable = new DataTable();
+            var value = dataTable.Compute(expression, "");
+            return Convert.ToDouble(value);
+        }
 
     }
 }
