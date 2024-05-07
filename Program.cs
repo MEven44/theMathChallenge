@@ -75,7 +75,7 @@ namespace TheMathChallenge
                 string[] sides = equation.Split('=');
                 if (sides.Length !=2)
                 {
-                    return false
+                    return false;
                 }
                 //evaluate both sides
                double leftResult = EvaluateExpression(sides[0]);
