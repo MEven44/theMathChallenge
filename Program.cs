@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data;
+using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Xml;
 
 namespace TheMathChallenge
@@ -70,8 +72,9 @@ namespace TheMathChallenge
             {
                 for (int i = 0; i < playerNumbers.Length; i++)
                 {
-                    equation = equation.Replace((i + 1).ToString(), playerNumbers[i].ToString());
+                    equation = equation.Replace($"{{{i + 1}}}", playerNumbers[i].ToString());
                 }
+                Console.WriteLine($"the equation after replacement is: {equation}");
                 string[] sides = equation.Split('=');
                 if (sides.Length !=2)
                 {
@@ -80,10 +83,12 @@ namespace TheMathChallenge
                 //evaluate both sides
                double leftResult = EvaluateExpression(sides[0]);
                double rightResult = EvaluateExpression(sides[1]);
-
-               //compare results
                
-               return leftResult-rightResult == 0;
+               Console.WriteLine($"left side: {leftResult}");
+               Console.WriteLine($"right side: {rightResult}");
+               //compare results
+               const double tolerance = 1e-9;
+               return Math.Abs(leftResult-rightResult) < tolerance;
             }
             catch (Exception)
             {
